@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        margin-top: 6px;
+    }
+</style>
+<body>
+    <h1>Meu Quinto Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="sexo_masc_id" value="Masculino">
+        <label for="sexo_masc_id">Masculino</label> <br>
+
+        <input type="radio" name="sexo" id="sexo_fem_id" value="Feminino">
+        <label for="sexo_fem_id">Feminino</label> <br>
+
+        <input type="radio" name="sexo" id="sexo_outro_id" value="Outro" checked>
+        <label for="sexo_outro_id">Prefiro não dizer</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esporte_futebol" id="esporte_futebol_id">
+        <label for="esporte_futebol_id">Futebol</label> <br>
+        
+        <input type="checkbox" name="esporte_basquete" id="esporte_basquete_id">
+        <label for="esporte_basquete_id">Basquete</label> <br>
+        
+        <input type="checkbox" name="esporte_volei" id="esporte_volei_id">
+        <label for="esporte_volei_id">Volei</label> <br>
+        
+        <input type="checkbox" name="esporte_natacao" id="esporte_natacao_id">
+        <label for="esporte_natacao_id">Natação</label>
+    </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
