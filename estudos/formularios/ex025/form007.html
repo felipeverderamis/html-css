@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- @charset="UTF-8"; -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input{
+        margin-top: 6px;
+    }
+</style>
+<body>
+    <h1>Meu Sétimo Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="estado_id">Estado</label>
+            <select name="estado" id="estado_id">
+                <option value="" selected>-- Escolher --</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+                
+                <optgroup label="Região Sul">
+                    <option value="PA">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="profissao_id">Profissão </label>
+            <input type="text" name="profissao" id="profissao_id" list="profissoes">
+            <datalist id="profissoes">
+                <option>Publicitário</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option>Empreendedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="mensagem_id">Mensagem: </label> <br>
+            <textarea name="mensagem" id="mensagem_id" cols="40" rows="4"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
