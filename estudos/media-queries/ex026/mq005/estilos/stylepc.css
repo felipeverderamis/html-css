@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* Versão Mobile First */
-
 * {
     margin: 0;
     padding: 0;
@@ -22,21 +20,8 @@ h1 {
     font-size: 3em;
 }
 
-span#menu {
-    display: block;
-    padding: 8px;
-    text-align: center;
-    color: white;
-    background-color: #242424;
-    cursor: pointer;
-}
-
-span#menu:hover {
-    background-color: #159852;
-}
-
 menu {
-    display: none;
+    display: block;
 }
 
 menu > ul {
@@ -45,14 +30,14 @@ menu > ul {
 }
 
 menu li {
-    display: block;
+    display: inline-block;
     color: white;
     /* margin: 0 -2.5px; */
 }
 
 menu a {
     display: block;
-    padding: 12px;
+    padding: 10px;
     text-decoration: none;
     color: white;
 }

@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query - Exercício 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
+<style>
+    .material-symbols-outlined#menu{
+        font-size: 22px;
+    }
+</style>
 <body>
     <header>
         <h1>Jornal</h1>
-        <menu>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="lista">
             <ul>
-                <li><a href="">Notícias</a></li>
-                <li><a href="">Regional</a></li>
-                <li><a href="">Economia</a></li>
-                <li><a href="">Política</a></li>
-                <li><a href="">Tecnologia</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Regional</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Tecnologia</a></li>
             </ul>
         </menu>
     </header>
@@ -30,5 +37,14 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe iste odit ex esse animi earum facere veritatis itaque nam quo vero voluptatem quasi perspiciatis quidem, alias quaerat harum qui? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea inventore maxime dignissimos fugit mollitia.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (lista.style.display == 'block') {
+                lista.style.display = 'none'
+            } else {
+                lista.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
