@@ -6,13 +6,14 @@
     <title>Media Query - Exercício 5</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <style>
     .material-symbols-outlined#menu{
         font-size: 22px;
     }
 </style>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Jornal</h1>
         <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -28,16 +29,26 @@
     </header>
     <main>
         <article>
-            <h2>Aprendendo a Fazer um Menu Responsivo</h2>
+            <h2>Artigo Lorem Ipsum</h2>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed est cum inventore officia, esse voluptates? Illum rerum excepturi culpa voluptate animi odio laudantium, harum distinctio voluptatem, nam omnis minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur dolor, suscipit voluptate eveniet magni cupiditate quae, quos, veritatis dicta sint! Error minima atque nobis nihil nesciunt, repellat dolorem exercitationem.</p>
+            <p>Neque saepe iste odit ex esse animi earum facere veritatis itaque nam quo vero voluptatem quasi perspiciatis quidem, alias quaerat harum qui?</p>
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam odit amet quis nisi consectetur maiores sint quae, ut veritatis cumque sapiente corrupti distinctio iure error ea aut porro culpa eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat temporibus perferendis necessitatibus modi nam impedit rerum id sed quibusdam, veritatis nemo. Voluptas, libero voluptatum! Odio hic quibusdam error reprehenderit officia?</p>
             
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe iste odit ex esse animi earum facere veritatis itaque nam quo vero voluptatem quasi perspiciatis quidem, alias quaerat harum qui? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea inventore maxime dignissimos fugit mollitia.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum rerum excepturi culpa voluptate animi odio laudantium, harum distinctio voluptatem, nam omnis minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur dolor, suscipit voluptate eveniet magni cupiditate quae, quos, veritatis dicta sint! Error minima atque nobis nihil nesciunt, repellat dolorem exercitationem.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto distinctio aliquam facilis sapiente quos accusantium quidem modi, explicabo suscipit rerum numquam ab corrupti.</p>
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                lista.style.display = 'block'
+            } else {
+                lista.style.display = 'none'
+            }
+        }
+        
         function clickMenu() {
             if (lista.style.display == 'block') {
                 lista.style.display = 'none'
