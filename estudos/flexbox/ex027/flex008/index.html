@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
+    <style>
+        /* "align-self" só funciona para itens no eixo trasnversal */
+    
+        div.container {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: cornflowerblue;
+        }
+    
+        div.box {
+            padding: 20px;
+            flex-basis: auto;
+            text-align: center;
+            border: 1px solid coral;
+            background-color: antiquewhite;
+        }
+    
+        div.container2 {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: coral;
+        }
+    
+        div.box2 {
+            padding: 20px;
+            flex-basis: 220px;
+            text-align: center;
+            border: 1px solid cornflowerblue;
+            background-color: azure;
+        }
+    
+    </style>
 </head>
-<style>
-    /* "align-self" só funciona para itens no eixo trasnversal */
-
-    div.container {
-        display: flex;
-        flex-flow: row nowrap;
-        background-color: cornflowerblue;
-    }
-
-    div.box {
-        padding: 20px;
-        flex-basis: auto;
-        text-align: center;
-        border: 1px solid coral;
-        background-color: antiquewhite;
-    }
-
-    div.container2 {
-        display: flex;
-        flex-flow: row wrap;
-        background-color: coral;
-    }
-
-    div.box2 {
-        padding: 20px;
-        flex-basis: 220px;
-        text-align: center;
-        border: 1px solid cornflowerblue;
-        background-color: azure;
-    }
-
-</style>
 <body>
     <div class="container">
         <div class="box" id="i1"> Outro conteúdo - A </div>

@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
+    <style>
+        div.container {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: cornflowerblue;
+        }
+    
+        div.box {
+            /*flex-basis: 220px;
+            flex-shrink: 1;
+            flex-grow: 1;*/
+            flex: 1 1 200px; /* grow + shrink + basis (valor padrão é "0 1 auto" ou "initial")*/
+            /* flex: none; (0 0 auto) */
+            /* flex: auto; (1 1 auto) */
+            text-align: center;
+            border: 1px solid coral;
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
-<style>
-    div.container {
-        display: flex;
-        flex-flow: row nowrap;
-        background-color: cornflowerblue;
-    }
-
-    div.box {
-        /*flex-basis: 220px;
-        flex-shrink: 1;
-        flex-grow: 1;*/
-        flex: 1 1 200px; /* grow + shrink + basis (valor padrão é "0 1 auto" ou "initial")*/
-        /* flex: none; (0 0 auto) */
-        /* flex: auto; (1 1 auto) */
-        text-align: center;
-        border: 1px solid coral;
-        background-color: antiquewhite;
-    }
-</style>
 <body>
     <div class="container">
         <div class="box"> A </div>
