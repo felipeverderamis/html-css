@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Centralizado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        main {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 50vh;
+            background-color: papayawhip;
+        }
+
+        section {
+            width: 260px;
+            height: 260px;
+            background-color: steelblue;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Login</h1>
+        </section>
+    </main>
+</body>
+</html>
