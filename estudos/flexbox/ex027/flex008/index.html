@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+</head>
+<style>
+    /* "align-self" só funciona para itens no eixo trasnversal */
+
+    div.container {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: cornflowerblue;
+    }
+
+    div.box {
+        padding: 20px;
+        flex-basis: auto;
+        text-align: center;
+        border: 1px solid coral;
+        background-color: antiquewhite;
+    }
+
+    div.container2 {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: coral;
+    }
+
+    div.box2 {
+        padding: 20px;
+        flex-basis: 220px;
+        text-align: center;
+        border: 1px solid cornflowerblue;
+        background-color: azure;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="i1"> Outro conteúdo - A </div>
+        <div class="box" id="i2"> B </div>
+        <div class="box" id="i3"> C </div>
+        <div class="box" id="i4"> D </div>
+        <div class="box" id="i5"> Outro conteúdo ainda maior - E </div>
+        <div class="box" id="i6"> F </div>
+        <div class="box" id="i7"> G </div>
+    </div>
+
+    <div class="container2">
+        <div class="box2" id="i1"> Outro conteúdo - A </div>
+        <div class="box2" id="i2"> B </div>
+        <div class="box2" id="i3"> C </div>
+        <div class="box2" id="i4"> D </div>
+        <div class="box2" id="i5"> Outro conteúdo ainda maior - E </div>
+        <div class="box2" id="i6"> F </div>
+        <div class="box2" id="i7"> G </div>
+    </div>
+</body>
+</html>
